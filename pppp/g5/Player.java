@@ -217,7 +217,7 @@ public class Player implements pppp.sim.Player {
 			
 			gate = pos[p][0] = pos[p][2] = point(0, side * 0.5, neg_y, swap);
 			// second position is calculated
-			double r = 30;
+			double r = side * .4;
 			double theta = Math.PI / (n_pipers + 1);
 			double x = - r * Math.cos((p + 1) * theta);
 			double y = side*.5 - r * Math.sin((p + 1) * theta);
@@ -269,7 +269,7 @@ public class Player implements pppp.sim.Player {
 					}
 				}
 				if (++pos_index[p] == pos[p].length) pos_index[p] = 0;
-				if (pos_index[p] == 2) {
+				if (pos_index[p] == 3) {
 					state = true;
 				}
 				if (pos_index[p] == 3) {
